@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Quote } from "../types";
 
 function Quotes() {
-  const [data, setData] = useState<any>();
+  const [data, setData] = useState<Quote>();
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     fetch("https://quotes-api-self.vercel.app/quote")

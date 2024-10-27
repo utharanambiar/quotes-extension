@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import styles from "./background.module.scss";
 
 function Background() {
-  const [data, setData] = useState<any>();
-  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState<string>();
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     fetch(
